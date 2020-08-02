@@ -19,7 +19,7 @@ public final class DTPlayerSettings extends JavaPlugin implements Listener {
     public void onInventoryClick(InventoryClickEvent e) {
         Player p = (Player) e.getWhoClicked();
 
-        if(p.getOpenInventory().getTitle().equalsIgnoreCase("§9Настройки")) {
+        if(p.getOpenInventory().getTitle().equalsIgnoreCase("§9Ваши настройки")) {
             e.setCancelled(true);
             int slot = e.getSlot();
             p.closeInventory();
