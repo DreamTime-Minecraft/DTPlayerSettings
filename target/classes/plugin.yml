@@ -1,0 +1,10 @@
+name: DTPlayerSettings
+version: 1.0-SNAPSHOT
+main: ru.buseso.dreamtime.dtplayersettings.DTPlayerSettings
+api-version: 1.13
+authors: [BuseSo]
+description: Simple PlayerSettings fr DreamTime
+
+commands:
+  playersettings:
+    aliases: [ps,settings,setting,option,options]
