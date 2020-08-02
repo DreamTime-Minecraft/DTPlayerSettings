@@ -64,16 +64,19 @@ public class PlayerSettingsCmd implements CommandExecutor {
                 ItemMeta chestMeta = chest.getItemMeta();
                 chestMeta.setDisplayName("§6Сокровищницы");
                 chest.setItemMeta(chestMeta);
+                inv.setItem(i, chest);
             } else if(i == 20) {
                 ItemStack color = new ItemStack(Material.INK_SACK);
                 ItemMeta colorMeta = color.getItemMeta();
                 colorMeta.setDisplayName("§fЦвет в скорборде");
                 color.setItemMeta(colorMeta);
+                inv.setItem(i, color);
             } else if(i == 22) {
                 ItemStack prefix = new ItemStack(Material.MAP);
                 ItemMeta pref = prefix.getItemMeta();
                 pref.setDisplayName("§fПрефикс");
                 prefix.setItemMeta(pref);
+                inv.setItem(i, prefix);
             }
         }
 
